@@ -1,0 +1,26 @@
+{
+  "name": "toggle-init-files",
+  "displayName": "Toggle __init__.py",
+  "description": "Toggle visibility of __init__.py files in the explorer",
+  "version": "1.0.0",
+  "publisher": "local",
+  "engines": { "vscode": "^1.75.0" },
+  "categories": ["Other"],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "toggle-init-files.toggle",
+        "title": "Toggle __init__.py Visibility"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "toggle-init-files.toggle",
+        "key": "ctrl+shift+i",
+        "mac": "cmd+shift+i"
+      }
+    ]
+  }
+}
